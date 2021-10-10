@@ -34,5 +34,5 @@ app.use("/api/auth", authRouter);
 app.use("/api/courses", courseRouter);
 app.use("/api/carts", cartRouter);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
