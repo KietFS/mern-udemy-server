@@ -1,0 +1,130 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "userName":"Brad",
+    "password": "1234"
+}
+
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "userName":"Brad",
+    "password": "1234"
+}
+
+
+
+###
+
+PUT http://localhost:5000/api/auth
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI1NjY1Nzl9.Fylm649BfcvIXQUVeCwatK9nR0W5ylY7iP2Z76yHfc4
+
+{
+    "userName":"Brad",
+    "surplus": 20,
+    "minusValue": -100
+}
+
+
+
+###
+
+POST http://localhost:5000/api/courses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI0OTc1NDd9.94Nk_QjfJS8WbkbxBgtsyWNw9evLY0kFCDPCaWj_FFI
+
+{
+
+
+
+"topic": "AI",
+"title":  "Create AI Voice Assistant (JARVIS) with Python",
+"lecture": "Himanshu Gour",
+"rate": 5,
+"imageUrl": "https://img-c.udemycdn.com/course/240x135/3383824_29d6_6.jpg",
+"price": 18
+
+
+
+
+}
+
+
+###
+
+GET http://localhost:5000/api/courses/614b232a5bd356199844bcc7
+Content-Type: application/json
+
+
+
+###
+
+GET http://localhost:5000/api/courses/
+
+
+
+###
+
+
+POST http://localhost:5000/api/carts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI1MzQyODF9.RtXAjqXyni1DqLa9xzkipebEMMCW91ZtGdwe0X2UGUU
+
+{
+    "title" : "The Web Developer Bootcamp 2021"
+
+}
+
+
+###
+
+DELETE  http://localhost:5000/api/carts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI1Mjc3Mzd9.w7J9KpLSam6oAj2-Zya95EL874fTsienqfWlSc4uvXo
+
+{
+    "title" : "Angular - The Complete Guide (2021 Edition)"
+
+}
+
+
+###
+
+DELETE  http://localhost:5000/api/carts/allcarts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI2NTg5ODB9.D25zYiFaFYzrc9cpTdJHQxd0s8PtYMWDgcgEG3Dg2vE
+
+
+
+
+###
+
+GET  http://localhost:5000/api/carts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI1Mjc3Mzd9.w7J9KpLSam6oAj2-Zya95EL874fTsienqfWlSc4uvXo
+
+
+
+###
+GET http://localhost:5000/api/courses/mycourse
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI2NTA4MTJ9.ZdiJQB9XeUSpHZa19-qxt6s0VoxZqKBXVfnh7UpQ2qM
+
+
+###
+POST http://localhost:5000/api/courses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTRkZWY4YWZhMjY4ODVmM2MyNDViYjYiLCJpYXQiOjE2MzI2NTA4MTJ9.ZdiJQB9XeUSpHZa19-qxt6s0VoxZqKBXVfnh7UpQ2qM
+
+{
+    "topic": "AI",
+    "title": "Python Machine Learning Bootcamp",
+    "lecture" : "David Congretta",
+    "rate": 5,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/4242120_3b84.jpg",
+    "price": 20
+}
